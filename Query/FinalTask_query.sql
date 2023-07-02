@@ -62,17 +62,7 @@ BEGIN
     WHERE d.StatusID = @StatusID;
 END;
 
--- Execute the summary_order_status Stored Procedure with StatusID 1 (Awaiting Shipment/Menunggu Pembayaran)
-EXEC summary_order_status @StatusID = 1;
 
--- Execute the summary_order_status Stored Procedure with StatusID 2 (Awaiting Shipment/Menunggu Pembayaran)
+-- Execute the summary_order_status Stored Procedure with StatusID 2 
 EXEC summary_order_status @StatusID = 2;
 
--- Execute the summary_order_status Stored Procedure with StatusID 3 (Shipped/Sedang Dikirim)
-EXEC summary_order_status @StatusID = 3;
-
--- Execute the summary_order_status Stored Procedure with StatusID 4 (Completed/Pesanan Sampai Tujuan)
-EXEC summary_order_status @StatusID = 4;
-
--- Execute the summary_order_status Stored Procedure with StatusID 5 (Cancelled/Pesanan dibatalkan oleh customer)
-EXEC summary_order_status @StatusID = 5;
